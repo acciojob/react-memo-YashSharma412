@@ -6,7 +6,7 @@ function Counter({dataObj, setDataObj}) {
         <p>Count: <span id='incr-cnt' >{dataObj.count}</span></p>
         <button  onClick={()=>setDataObj({...dataObj, count: dataObj.count + 1})}>+</button>
         <h1>Expensive Calculation</h1>
-        <p>1000000000</p>
+        <p id='calc'>1000000000</p>
     </div>
   )
 }
