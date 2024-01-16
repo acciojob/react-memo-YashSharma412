@@ -11,7 +11,7 @@ const App = () => {
         skillsArr: []
     })
   return (
-    <div>
+    <div id="main">
         <h1>React.useMemo</h1>
         <MyTodos dataObj={dataObj} setDataObj={setDataObj} /><hr />
         <Counter dataObj={dataObj} setDataObj={setDataObj} /><hr /><hr />

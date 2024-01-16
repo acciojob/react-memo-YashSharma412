@@ -26,6 +26,7 @@ function ReactMemo({ dataObj, setDataObj }) {
         }}
       >
         <input
+        id="skill-input"
           type="text"
           onChange={(e) => setMsg(e.target.value)}
           value={msg}

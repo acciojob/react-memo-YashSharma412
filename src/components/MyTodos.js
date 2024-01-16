@@ -7,6 +7,7 @@ function MyTodos({ dataObj, setDataObj }) {
       {dataObj.todoArr.length !== 0 &&
         dataObj.todoArr.map((todo) => <p key={todo.id} id={todo.id}>{todo.msg}</p>)}
       <button
+      id="add-todo-btn"
         onClick={() =>
           setDataObj({
             ...dataObj,
