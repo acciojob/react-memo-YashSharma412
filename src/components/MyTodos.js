@@ -5,7 +5,8 @@ function MyTodos({ dataObj, setDataObj }) {
     <div>
       <h1>My todos</h1>
       {dataObj.todoArr.length !== 0 &&
-        dataObj.todoArr.map((todo) => <p key={todo.id} id={todo.id}>{todo.msg}</p>)}
+        dataObj.todoArr.map((todo) => 
+        <p key={todo.id} id={`todo-${todo.id}`}>{todo.msg}</p>)}
       <button
       id="add-todo-btn"
         onClick={() =>
@@ -14,7 +15,7 @@ function MyTodos({ dataObj, setDataObj }) {
             todoArr: [
               ...dataObj.todoArr,
               {
-                id: (dataObj.todoArr.length === 0)? 1 : dataObj.todoArr[dataObj.todoArr.length - 1].id + 1,
+                id: (dataObj.todoArr.length === 0)? 0 : dataObj.todoArr[dataObj.todoArr.length - 1].id + 1,
                 msg: "New Todo",
               },
             ],

@@ -31,7 +31,7 @@ function ReactMemo({ dataObj, setDataObj }) {
           onChange={(e) => setMsg(e.target.value)}
           value={msg}
         />
-        <button type="submit">Add Skill</button>
+        <button id="skill-btn" type="submit">Add Skill</button>
       </form>
       <ul>
         {dataObj.skillsArr.length !== 0 &&
